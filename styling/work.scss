@@ -1,0 +1,14 @@
+.work {
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    top: 30vh;
+  }
+
+  &__example {
+    height: 10vw;
+    width: 15vw;
+    background-color: black;
+  }
+}

@@ -1,3 +1,5 @@
+@use "../mixin";
+
 .about {
   background-color: rgb(255, 255, 255);
   height: 100vh;
@@ -31,6 +33,12 @@
     height: calc(100% - 5vh);
     width: 100%;
 
+    @include mixin.phone {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
     &__wrap {
       height: 100%;
       width: 42%;
@@ -39,8 +47,23 @@
       align-items: center;
       flex-direction: row;
 
+      @include mixin.tablet {
+        width: 45%; // Adjust the styles for tablet view
+      }
+
+      @include mixin.phone {
+        padding-top: 0; // Adjust the styles for tablet view
+      }
+
       &__img {
         height: 40vh;
+
+        @include mixin.tablet {
+          height: 30vh; // Adjust the styles for tablet view
+        }
+        @include mixin.phone {
+          height: 20vh;
+        }
       }
     }
 
@@ -50,6 +73,17 @@
       height: 100%;
       padding: 5vh;
       padding-right: 0;
+
+      @include mixin.tablet {
+        width: 55%; // Adjust the styles for tablet view
+      }
+
+      @include mixin.phone {
+        width: 90%; // Adjust the styles for tablet view
+        padding-bottom: 0px;
+        padding-left: 10px;
+        height: 40%;
+      }
     }
   }
 }

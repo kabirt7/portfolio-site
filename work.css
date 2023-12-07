@@ -1,0 +1,12 @@
+.work__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  top: 30vh;
+}
+.work__example {
+  height: 10vw;
+  width: 15vw;
+  background-color: black;
+}
+
+/*# sourceMappingURL=work.css.map */

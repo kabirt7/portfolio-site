@@ -19,15 +19,23 @@
 @media only screen and (max-width: 660px) {
   .contact__bg {
     height: 85vh;
+    background-color: white;
   }
 }
 .contact__board {
   width: 100vh;
   height: 50vh;
-  background-color: magenta;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 660px) {
+  .contact__board {
+    align-items: flex-start;
+    margin-top: 20vh;
+    margin-left: 5vw;
+  }
 }
 .contact__grid {
   display: grid;
@@ -55,6 +63,5 @@
 .contact p:hover,
 .contact a:hover {
   text-decoration: underline;
+  text-decoration-color: magenta;
 }
-
-/*# sourceMappingURL=contact.css.map */

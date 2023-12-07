@@ -10,6 +10,11 @@
   padding-top: 30vh;
   width: 75%;
 }
+@media only screen and (max-width: 660px) {
+  .work__gallery {
+    padding-top: 25vh;
+  }
+}
 .work__wrap {
   width: 50%;
   display: flex;
@@ -17,7 +22,7 @@
   align-items: center;
 }
 .work__example {
-  background-image: url("../project-example.png");
+  background-image: url("../src/project-example.png");
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-position: top;
@@ -61,5 +66,3 @@
     height: 10vw;
   }
 }
-
-/*# sourceMappingURL=work.css.map */

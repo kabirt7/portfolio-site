@@ -1,4 +1,4 @@
-@use "../mixin";
+@use "./mixin";
 
 .work {
   display: flex;
@@ -11,6 +11,10 @@
     height: 70vh;
     padding-top: 30vh;
     width: 75%;
+
+    @include mixin.phone {
+      padding-top: 25vh;
+    }
   }
 
   &__wrap {
@@ -21,7 +25,7 @@
   }
 
   &__example {
-    background-image: url("../project-example.png");
+    background-image: url("../src/project-example.png");
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-size: cover;
     background-position: top;
@@ -43,10 +47,10 @@
     }
 
     &:hover {
-      transform: scale(1.1); // Increase the size on hover
+      transform: scale(1.1);
 
       &::after {
-        opacity: 1; // Show the text on hover
+        opacity: 1;
       }
     }
 

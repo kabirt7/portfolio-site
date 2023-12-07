@@ -1,4 +1,4 @@
-@use "../mixin";
+@use "./mixin";
 
 .contact {
   display: flex;
@@ -19,16 +19,23 @@
 
     @include mixin.phone {
       height: 85vh;
+      background-color: white;
     }
   }
 
   &__board {
     width: 100vh;
     height: 50vh;
-    background-color: magenta;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include mixin.phone {
+      align-items: flex-start;
+      margin-top: 20vh;
+      margin-left: 5vw;
+    }
   }
 
   &__grid {
@@ -56,6 +63,7 @@
     text-decoration: none;
     &:hover {
       text-decoration: underline;
+      text-decoration-color: magenta;
     }
   }
 }

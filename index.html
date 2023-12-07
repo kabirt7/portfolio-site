@@ -5,10 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KABIR THETHY</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./navbar.css" />
     <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="./about.css" />
+    <script src="./nav.js" defer></script>
   </head>
+
   <body>
-    <div class="home">
+    <nav>
+      <div class="nav">
+        <div class="nav__hamburger" onclick="toggleMenu()">☰</div>
+        <div class="nav__wrap">
+          <div class="nav__wrap__link" onclick="scrollToSection('home')">
+            <h1 data-section="HOME">HOME</h1>
+          </div>
+          <div class="nav__wrap__link" onclick="scrollToSection('about')">
+            <h1 data-section="ABOUT">ABOUT</h1>
+          </div>
+          <div class="nav__wrap__link" onclick="scrollToSection('work')">
+            <h1 data-section="WORK">WORK</h1>
+          </div>
+          <div class="nav__wrap__link" onclick="scrollToSection('contact')">
+            <h1 data-section="CONTACT">CONTACT</h1>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="home page" id="home">
       <div class="home__marqueeWrap home__marqueeWrap1—modified">
         <div class="home__marquee1">
           <span>WEB DEVELOPER • GRAPHIC DESIGNER • ARTIST • </span>
@@ -27,5 +51,8 @@
         </div>
       </div>
     </div>
+    <div class="about page" id="about"><h1>hello</h1></div>
+    <div class="work page" id="work"><h1>hello</h1></div>
+    <div class="contact page" id="contact"><h1>hello</h1></div>
   </body>
 </html>

@@ -5,10 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KABIR THETHY</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./navbar.css" />
     <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="./work.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <script src="./nav.js" defer></script>
   </head>
+
   <body>
-    <div class="home">
+    <nav>
+      <div class="nav">
+        <div class="nav__hamburger" onclick="toggleMenu()">☰</div>
+        <div class="nav__wrap">
+          <div class="nav__wrap__link" onclick="scrollToSection('home')">
+            <h1 data-section="HOME">HOME</h1>
+          </div>
+          <div class="nav__wrap__link" onclick="scrollToSection('about')">
+            <h1 data-section="ABOUT">ABOUT</h1>
+          </div>
+          <div class="nav__wrap__link" onclick="scrollToSection('work')">
+            <h1 data-section="WORK">WORK</h1>
+          </div>
+          <div class="nav__wrap__link" onclick="scrollToSection('contact')">
+            <h1 data-section="CONTACT">CONTACT</h1>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="home page" id="home">
       <div class="home__marqueeWrap home__marqueeWrap1—modified">
         <div class="home__marquee1">
           <span>WEB DEVELOPER • GRAPHIC DESIGNER • ARTIST • </span>
@@ -24,6 +50,59 @@
         </div>
         <div class="home__marquee1 home__marquee2 home__marquee—reverse">
           <span> &nbsp;MELBOURNE // NAARM • KABIR THETHY • </span>
+        </div>
+      </div>
+    </div>
+    <div class="about page" id="about">
+      <div class="about__container">
+        <div class="about__banner"></div>
+
+        <div class="about__wrap">
+          <p id="about__p">
+            Hiya! I'm Kabir, a software developer hailing from Naarm. My
+            professional journey has taken a unique path, transitioning from a
+            background in genetics to the world of arts before venturing into
+            coding. I am deeply passionate about the intersection of clean,
+            accessible design and technology. Beyond coding, I find joy in
+            crafting intricate jewellery, experimenting with new recipes in the
+            kitchen, and soaking up the sun like a lizard. My tech arsenal
+            includes HTML for robust structure, CSS/SCSS for elegant styling,
+            and JavaScript to infuse interactivity into my creations.
+          </p>
+          <div class="about__wrap__wrap">
+            <img
+              class="about__wrap__wrap__img"
+              src="./kabir.jpeg"
+              alt="close up self portrait of Kabir. Brown skin, short hair, wearing a silver tooth necklace."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work page" id="work">
+      <div class="work__gallery">
+        <div class="work__wrap"><article class="work__example"></article></div>
+        <div class="work__wrap"><article class="work__example"></article></div>
+        <div class="work__wrap"><article class="work__example"></article></div>
+        <div class="work__wrap"><article class="work__example"></article></div>
+        <div class="work__wrap"><article class="work__example"></article></div>
+        <div class="work__wrap"><article class="work__example"></article></div>
+      </div>
+    </div>
+    <div class="contact page" id="contact">
+      <div class="contact__bg">
+        <div class="contact__board">
+          <div class="contact__grid">
+            <img src="./email.png" />
+            <p>kabir.t7@hotmail.com</p>
+            <img src="./github.png" />
+            <a href="https://github.com/kabirt7">github.com/kabir.t7</a>
+            <img src="./linkedin.png" />
+            <a href="https://www.linkedin.com/in/kabir-thethy-18a667236/"
+              >Kabir Thethy</a
+            >
+          </div>
         </div>
       </div>
     </div>

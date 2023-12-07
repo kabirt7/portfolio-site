@@ -48,21 +48,24 @@
       flex-direction: row;
 
       @include mixin.tablet {
-        width: 45%; // Adjust the styles for tablet view
+        width: 45%;
       }
 
       @include mixin.phone {
-        padding-top: 0; // Adjust the styles for tablet view
+        padding-top: 0;
       }
 
       &__img {
         height: 40vh;
 
         @include mixin.tablet {
-          height: 30vh; // Adjust the styles for tablet view
+          height: 35vh;
+          padding-left: 0px;
+          padding-right: 20px;
         }
         @include mixin.phone {
           height: 20vh;
+          padding-top: 5vw;
         }
       }
     }
@@ -71,17 +74,20 @@
       color: white;
       width: 58%;
       height: 100%;
-      padding: 5vh;
-      padding-right: 0;
+      padding: 7.5vh;
+      hyphens: auto;
 
       @include mixin.tablet {
-        width: 55%; // Adjust the styles for tablet view
+        width: 55%;
+        padding: 3.5vh;
+        padding-top: 7vw;
+        font-size: small;
       }
 
       @include mixin.phone {
-        width: 90%; // Adjust the styles for tablet view
-        padding-bottom: 0px;
-        padding-left: 10px;
+        width: 90%;
+        padding: 20px 0 0 10px;
+        font-size: smaller;
         height: 40%;
       }
     }

@@ -1,14 +1,68 @@
+@use "../mixin";
+
 .work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &__gallery {
     display: flex;
     flex-wrap: wrap;
+    height: 70vh;
+    padding-top: 30vh;
+    width: 75%;
+  }
 
-    top: 30vh;
+  &__wrap {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__example {
-    height: 10vw;
-    width: 15vw;
-    background-color: black;
+    background-image: url("../project-example.png");
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::after {
+      content: "Project Example";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: fuchsia;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover {
+      transform: scale(1.1); // Increase the size on hover
+
+      &::after {
+        opacity: 1; // Show the text on hover
+      }
+    }
+
+    @include mixin.phone {
+      width: 30vw;
+      height: 18vw;
+    }
+
+    @include mixin.tablet {
+      width: 25vw;
+      height: 12vw;
+    }
+
+    @include mixin.laptop {
+      width: 22vw;
+      height: 10vw;
+    }
   }
 }

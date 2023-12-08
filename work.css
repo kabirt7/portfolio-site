@@ -1,35 +1,54 @@
-.work {
+.work2 {
   display: flex;
+  align-items: flex-end;
+}
+.work2__wrap {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
+}
+.work2__wrap img {
+  height: 50px;
+  width: 50px;
+}
+.work2__wrap img:hover {
+  transform: scale(1.2);
+}
+.work2__outer {
+  padding: 10px;
+  overflow-y: hidden;
+  width: 400px;
+  height: 100%;
+  width: 65%;
+  height: 60vh;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.work2__container {
+  overflow-x: auto;
+  height: 100%;
+  gap: 30px;
+  display: flex;
+  flex-wrap: nowrap;
   align-items: center;
 }
-.work__gallery {
-  display: flex;
-  flex-wrap: wrap;
-  height: 70vh;
-  padding-top: 30vh;
-  width: 75%;
-}
-@media only screen and (max-width: 660px) {
-  .work__gallery {
-    padding-top: 25vh;
-  }
-}
-.work__wrap {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.work__example {
+.work2__item {
+  flex: 1 0 300px;
+  height: 60%;
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid;
   background-image: url("../src/project-example.png");
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   position: relative;
+  border: none;
 }
-.work__example::after {
+.work2__item::after {
   content: "Project Example";
   position: absolute;
   top: 50%;
@@ -42,27 +61,9 @@
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-.work__example:hover {
+.work2__item:hover {
   transform: scale(1.1);
 }
-.work__example:hover::after {
+.work2__item:hover::after {
   opacity: 1;
-}
-@media only screen and (max-width: 660px) {
-  .work__example {
-    width: 30vw;
-    height: 18vw;
-  }
-}
-@media only screen and (min-width: 660px) and (max-width: 1000px) {
-  .work__example {
-    width: 25vw;
-    height: 12vw;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .work__example {
-    width: 22vw;
-    height: 10vw;
-  }
 }

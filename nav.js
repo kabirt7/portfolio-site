@@ -10,7 +10,7 @@ function toggleMenu() {
 function clickLeft() {
   let container = document.querySelector(".work2__container");
   container.scrollTo({
-    left: container.scrollLeft - 200,
+    left: container.scrollLeft - 300,
     top: 0,
     behavior: "smooth",
   });
@@ -19,7 +19,7 @@ function clickLeft() {
 function clickRight() {
   let container = document.querySelector(".work2__container");
   container.scrollTo({
-    left: container.scrollLeft + 200,
+    left: container.scrollLeft + 300,
     top: 0,
     behavior: "smooth",
   });

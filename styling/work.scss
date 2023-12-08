@@ -1,72 +1,113 @@
 @use "./mixin";
 
-.work {
+.work2 {
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &__gallery {
+  align-items: flex-end;
+  &__wrap {
+    height: 87%;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    height: 70vh;
-    padding-top: 30vh;
-    width: 75%;
-
-    @include mixin.phone {
-      padding-top: 25vh;
-    }
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
   }
 
-  &__wrap {
-    width: 50%;
+  &__outer {
+    padding: 10px;
+    overflow-y: hidden;
+    width: 400px;
+    height: 100%;
+    width: 65%;
+    border: 1px solid blue;
+    height: 60vh;
+  }
+
+  &__container {
+    overflow-x: auto;
+    height: 100%;
+
     display: flex;
-    justify-content: center;
+    flex-wrap: nowrap;
     align-items: center;
   }
 
-  &__example {
-    background-image: url("../src/project-example.png");
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    position: relative;
-
-    &::after {
-      content: "Project Example";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: fuchsia;
-      font-size: 1.5rem;
-      font-weight: bold;
-      text-align: center;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    &:hover {
-      transform: scale(1.1);
-
-      &::after {
-        opacity: 1;
-      }
-    }
-
-    @include mixin.phone {
-      width: 30vw;
-      height: 18vw;
-    }
-
-    @include mixin.tablet {
-      width: 25vw;
-      height: 12vw;
-    }
-
-    @include mixin.laptop {
-      width: 22vw;
-      height: 10vw;
-    }
+  &__item {
+    flex: 1 0 100px;
+    height: 70%;
+    width: 33vw;
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid;
   }
 }
+
+// .work {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   &__gallery {
+//     display: flex;
+//     flex-wrap: wrap;
+//     height: 70vh;
+//     padding-top: 30vh;
+//     width: 75%;
+
+//     @include mixin.phone {
+//       padding-top: 25vh;
+//     }
+//   }
+
+//   &__wrap {
+//     width: 50%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+
+//   &__example {
+//     background-image: url("../src/project-example.png");
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//     background-size: cover;
+//     background-position: top;
+//     background-repeat: no-repeat;
+//     position: relative;
+
+//     &::after {
+//       content: "Project Example";
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//       color: fuchsia;
+//       font-size: 1.5rem;
+//       font-weight: bold;
+//       text-align: center;
+//       opacity: 0;
+//       transition: opacity 0.3s ease;
+//     }
+
+//     &:hover {
+//       transform: scale(1.1);
+
+//       &::after {
+//         opacity: 1;
+//       }
+//     }
+
+//     @include mixin.phone {
+//       width: 30vw;
+//       height: 18vw;
+//     }
+
+//     @include mixin.tablet {
+//       width: 25vw;
+//       height: 12vw;
+//     }
+
+//     @include mixin.laptop {
+//       width: 22vw;
+//       height: 10vw;
+//     }
+//   }
+// }

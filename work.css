@@ -1,68 +1,36 @@
-.work {
+.work2 {
   display: flex;
+  align-items: flex-end;
+}
+.work2__wrap {
+  height: 87%;
+  width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  background-color: pink;
+}
+.work2__outer {
+  padding: 10px;
+  overflow-y: hidden;
+  width: 400px;
+  height: 100%;
+  width: 65%;
+  border: 1px solid blue;
+  height: 60vh;
+}
+.work2__container {
+  overflow-x: auto;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
   align-items: center;
 }
-.work__gallery {
-  display: flex;
-  flex-wrap: wrap;
-  height: 70vh;
-  padding-top: 30vh;
-  width: 75%;
-}
-@media only screen and (max-width: 660px) {
-  .work__gallery {
-    padding-top: 25vh;
-  }
-}
-.work__wrap {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.work__example {
-  background-image: url("../src/project-example.png");
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.work__example::after {
-  content: "Project Example";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: fuchsia;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.work__example:hover {
-  transform: scale(1.1);
-}
-.work__example:hover::after {
-  opacity: 1;
-}
-@media only screen and (max-width: 660px) {
-  .work__example {
-    width: 30vw;
-    height: 18vw;
-  }
-}
-@media only screen and (min-width: 660px) and (max-width: 1000px) {
-  .work__example {
-    width: 25vw;
-    height: 12vw;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .work__example {
-    width: 22vw;
-    height: 10vw;
-  }
+.work2__item {
+  flex: 1 0 100px;
+  height: 70%;
+  width: 33vw;
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid;
 }

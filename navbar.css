@@ -29,6 +29,10 @@
     font-size: 2em;
     margin: 0;
   }
+  .nav__wrap__link--active {
+    color: magenta;
+    -webkit-text-stroke: 1px magenta;
+  }
   .nav__wrap__link:hover {
     color: magenta;
     -webkit-text-stroke: 2px magenta;
@@ -64,6 +68,10 @@
     font-style: italic;
     font-size: 1.5em;
     margin: 0;
+  }
+  .nav__wrap__link--active {
+    color: magenta;
+    -webkit-text-stroke: 1px magenta;
   }
   .nav__wrap__link:hover {
     color: magenta;

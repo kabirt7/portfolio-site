@@ -33,6 +33,11 @@
         font-size: 2em;
         margin: 0;
 
+        &--active {
+          color: magenta;
+          -webkit-text-stroke: 1px magenta;
+        }
+
         &:hover {
           color: magenta;
           -webkit-text-stroke: 2px magenta;
@@ -73,6 +78,11 @@
         font-style: italic;
         font-size: 1.5em;
         margin: 0;
+
+        &--active {
+          color: magenta;
+          -webkit-text-stroke: 1px magenta;
+        }
 
         &:hover {
           color: magenta;

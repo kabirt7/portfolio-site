@@ -10,14 +10,14 @@
   justify-content: center;
 }
 .work2__wrap img {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 }
 .work2__wrap img:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 .work2__outer {
-  padding: 10px;
+  padding: 45px;
   overflow-y: hidden;
   width: 65%;
   height: 60vh;

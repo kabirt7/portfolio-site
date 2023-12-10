@@ -4,8 +4,8 @@
     display: flex;
     width: 100vw;
     position: fixed;
-    background-color: white;
     z-index: 999;
+    height: 20vh;
   }
   .nav__hamburger {
     display: none;

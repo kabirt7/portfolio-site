@@ -21,7 +21,7 @@
 .about__banner {
   width: 100%;
   height: 5vh;
-  background-color: rgb(251, 0, 205);
+  background-color: magenta;
 }
 .about__wrap {
   display: flex;
@@ -93,5 +93,3 @@
     height: 40%;
   }
 }
-
-/*# sourceMappingURL=about.css.map */

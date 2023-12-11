@@ -1,14 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let userInteractedWithNavbar = false;
   let isScrolling = false;
   let scrollTimeout;
 
   const handleScroll = () => {
-    if (userInteractedWithNavbar) {
-      userInteractedWithNavbar = false;
-      return;
-    }
-
     console.log("made it!");
 
     if (!isScrolling) {
@@ -34,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       clearTimeout(scrollTimeout);
       scrollTimeout = setTimeout(() => {
         isScrolling = false;
-      }, 20);
+      }, 200);
     }
   };
 
@@ -46,6 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function scrollToSection(section) {
+  // if (isScrolling) && ;
+
   document.getElementById(section).scrollIntoView({ behavior: "smooth" });
 
   // Get the navigation link element by ID
@@ -53,12 +49,10 @@ function scrollToSection(section) {
 
   navLink && navLink.classList.contains("nav__wrap__link--active")
     ? null
-    : navLink
-    ? (document
+    : document
         .querySelectorAll(".nav__wrap__link")
         .forEach((link) => link.classList.remove("nav__wrap__link--active")),
-      navLink.classList.add("nav__wrap__link--active"))
-    : null;
+    navLink.classList.add("nav__wrap__link--active");
 }
 
 function toggleMenu() {

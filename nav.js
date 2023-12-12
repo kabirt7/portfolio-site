@@ -40,11 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function scrollToSection(section) {
-  // if (isScrolling) && ;
-
   document.getElementById(section).scrollIntoView({ behavior: "smooth" });
 
-  // Get the navigation link element by ID
   const navLink = document.getElementById(`${section}-nav`);
 
   navLink && navLink.classList.contains("nav__wrap__link--active")

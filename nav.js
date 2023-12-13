@@ -48,17 +48,14 @@ document.addEventListener("DOMContentLoaded", function () {
 function scrollToSection(section) {
   document.getElementById(section).scrollIntoView({ behavior: "smooth" });
 
-  // Get the navigation link element by ID
   const navLink = document.getElementById(`${section}-nav`);
 
   navLink && navLink.classList.contains("nav__wrap__link--active")
     ? null
-    : navLink
-    ? (document
+    : document
         .querySelectorAll(".nav__wrap__link")
         .forEach((link) => link.classList.remove("nav__wrap__link--active")),
-      navLink.classList.add("nav__wrap__link--active"))
-    : null;
+    navLink.classList.add("nav__wrap__link--active");
 }
 
 function toggleMenu() {

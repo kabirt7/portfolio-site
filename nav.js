@@ -1,42 +1,40 @@
-document.addEventListener("DOMContentLoaded", function () {
-  let isScrolling = false;
-  let scrollTimeout;
+let isScrolling = false;
+let scrollTimeout;
 
-  const handleScroll = () => {
-    console.log("made it!");
+const handleScroll = () => {
+  console.log("made it!");
 
-    if (!isScrolling) {
-      isScrolling = true;
+  if (!isScrolling) {
+    isScrolling = true;
 
-      const sections = document.querySelectorAll(".page");
-      const viewportHeight = window.innerHeight;
-      const halfViewportAbove = viewportHeight * 0.5;
-      const currentPosition = window.scrollY + halfViewportAbove;
+    const sections = document.querySelectorAll(".page");
+    const viewportHeight = window.innerHeight;
+    const halfViewportAbove = viewportHeight * 0.5;
+    const currentPosition = window.scrollY + halfViewportAbove;
 
-      sections.forEach((section) => {
-        const rect = section.getBoundingClientRect();
-        const sectionTop = rect.top + window.scrollY;
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      const sectionTop = rect.top + window.scrollY;
 
-        if (
-          sectionTop <= currentPosition &&
-          currentPosition < sectionTop + rect.height
-        ) {
-          scrollToSection(section.id);
-        }
-      });
+      if (
+        sectionTop <= currentPosition &&
+        currentPosition < sectionTop + rect.height
+      ) {
+        scrollToSection(section.id);
+      }
+    });
 
-      clearTimeout(scrollTimeout);
-      scrollTimeout = setTimeout(() => {
-        isScrolling = false;
-      }, 200);
-    }
-  };
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      isScrolling = false;
+    }, 200);
+  }
+};
 
-  window.addEventListener("wheel", handleScroll);
+window.addEventListener("wheel", handleScroll);
 
-  window.addEventListener("beforeunload", () => {
-    window.removeEventListener("wheel", handleScroll);
-  });
+window.addEventListener("beforeunload", () => {
+  window.removeEventListener("wheel", handleScroll);
 });
 
 function scrollToSection(section) {

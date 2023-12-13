@@ -1,14 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let userInteractedWithNavbar = false;
   let isScrolling = false;
   let scrollTimeout;
 
   const handleScroll = () => {
-    if (userInteractedWithNavbar) {
-      userInteractedWithNavbar = false;
-      return;
-    }
-
     console.log("made it!");
 
     if (!isScrolling) {
@@ -34,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       clearTimeout(scrollTimeout);
       scrollTimeout = setTimeout(() => {
         isScrolling = false;
-      }, 20);
+      }, 200);
     }
   };
 

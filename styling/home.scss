@@ -1,3 +1,5 @@
+@use "./mixin";
+
 .home {
   height: 100vh;
   display: flex;
@@ -5,12 +7,34 @@
   justify-content: center;
   font-family: "Times New Roman", Times, serif;
 
+  &__wrap {
+    @include mixin.computer {
+      gap: 100px;
+      display: flex;
+      flex-direction: column;
+    }
+    @include mixin.laptop {
+      gap: 120px;
+      display: flex;
+      flex-direction: column;
+    }
+    @include mixin.tablet {
+      gap: 0px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   &__marqueeWrap {
     position: relative;
     display: block;
     width: 100vw;
     height: 140px;
     overflow: hidden;
+
+    @include mixin.computer {
+      height: 225px;
+    }
   }
 
   &__marquee1 {
@@ -33,6 +57,15 @@
       font-size: 85px;
       animation: marquee 30s linear infinite;
       font-weight: 600;
+
+      @include mixin.laptop {
+        font-size: 200px;
+      }
+
+      @include mixin.computer {
+        font-size: 300px;
+        line-height: 240px;
+      }
     }
 
     &--modified {

@@ -1,33 +1,26 @@
-@charset "UTF-8";
-.home {
+.home__wrap {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Times New Roman", Times, serif;
+  gap: 20px;
 }
 @media only screen and (min-width: 3000px) {
   .home__wrap {
-    gap: 100px;
-    display: flex;
-    flex-direction: column;
+    gap: 80px;
   }
 }
 @media only screen and (min-width: 1700px) and (max-width: 3000px) {
   .home__wrap {
-    gap: 120px;
-    display: flex;
-    flex-direction: column;
+    gap: 70px;
   }
 }
 @media only screen and (min-width: 660px) and (max-width: 1700px) {
   .home__wrap {
     gap: 0px;
-    display: flex;
-    flex-direction: column;
   }
 }
-.home__marqueeWrap {
+.home__marquee-w {
   position: relative;
   display: block;
   width: 100vw;
@@ -35,11 +28,17 @@
   overflow: hidden;
 }
 @media only screen and (min-width: 3000px) {
-  .home__marqueeWrap {
-    height: 225px;
+  .home__marquee-w {
+    height: 180px;
   }
 }
-.home__marquee1 {
+.home__marquee1mod {
+  font-weight: 600;
+}
+.home__marquee2mod {
+  font-weight: 100;
+}
+.home__marquee {
   position: absolute;
   display: block;
   margin: auto auto;
@@ -48,7 +47,7 @@
   min-width: 100%;
   height: 100%;
 }
-.home__marquee1 span {
+.home__marquee span {
   display: inline-block;
   padding-left: 100%;
   text-align: center;
@@ -56,33 +55,25 @@
   min-width: 100%;
   height: 100%;
   line-height: 140px;
-  font-size: 85px;
+  font-size: 110px;
   animation: marquee 30s linear infinite;
-  font-weight: 600;
-}
-@media only screen and (min-width: 1700px) and (max-width: 3000px) {
-  .home__marquee1 span {
-    font-size: 200px;
-  }
 }
 @media only screen and (min-width: 3000px) {
-  .home__marquee1 span {
-    font-size: 300px;
-    line-height: 240px;
+  .home__marquee span {
+    font-size: 230px;
+    line-height: 180px;
   }
 }
-.home__marquee1--modified {
-  margin-top: 3.125vh;
+@media only screen and (min-width: 1700px) and (max-width: 3000px) {
+  .home__marquee span {
+    font-size: 190px;
+  }
 }
 .home__marquee2 span {
   animation-delay: 15s;
 }
-.home__marquee2--modified {
-  font-weight: 100;
-}
-.home__marquee—reverse span {
+.home__reverse span {
   animation-direction: reverse;
-  font-weight: 100;
 }
 
 @keyframes marquee {

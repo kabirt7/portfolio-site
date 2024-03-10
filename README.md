@@ -1,3 +1,7 @@
+# HOSTING 
+
+https://eclectic-baklava-859501.netlify.app/featured
+
 # portfolio-site
 
 - using a scroll snap vertical design. restrained use of color. I like a clean palette and the magenta is a bold color.

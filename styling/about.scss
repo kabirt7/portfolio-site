@@ -1,0 +1,91 @@
+@use "./mixin";
+
+.about {
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__img {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__container {
+    width: auto;
+    @include mixin.computer {
+    }
+    @include mixin.laptop {
+    }
+
+    @include mixin.tablet {
+    }
+
+    @include mixin.phone {
+    }
+
+    background-color: black;
+    height: 60vh;
+  }
+
+  &__banner {
+    width: 100%;
+    height: 5vh;
+    background-color: magenta;
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    height: calc(100% - 5vh);
+
+    @include mixin.phone {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      padding: 2.5%;
+      @include mixin.tablet {
+      }
+
+      @include mixin.phone {
+      }
+
+      &__img {
+        height: 25vw;
+
+        @include mixin.tablet {
+        }
+        @include mixin.phone {
+        }
+      }
+    }
+
+    &__text {
+      color: rgb(255, 255, 255);
+      max-width: 45vw;
+
+      padding: 1.5vw;
+      padding-right: 0;
+      hyphens: auto;
+      font-size: 1.75vw;
+      display: flex;
+      align-items: center;
+
+      @include mixin.tablet {
+      }
+
+      @include mixin.phone {
+      }
+    }
+  }
+}

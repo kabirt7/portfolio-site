@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kabir</title>
+    <link rel="icon" type="image/x-icon" href="./src/magenta-circle-9.svg" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/navbar.css" />
+    <link rel="stylesheet" href="./CSS/home.css" />
+    <link rel="stylesheet" href="./CSS/about.css" />
+    <link rel="stylesheet" href="./CSS/work.css" />
+    <link rel="stylesheet" href="./CSS/contact.css" />
+    <script src="./nav.js" defer></script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav">
+        <div class="nav__hamburger" onclick="toggleMenu()">☰</div>
+        <div class="nav__wrap">
+          <div
+            class="nav__wrap__link nav__wrap__link--active"
+            id="home-nav"
+            onclick="scrollToSection('home')"
+          >
+            <h1 data-section="HOME">HOME</h1>
+          </div>
+          <div
+            class="nav__wrap__link"
+            id="about-nav"
+            onclick="scrollToSection('about')"
+          >
+            <h1 data-section="ABOUT">ABOUT</h1>
+          </div>
+          <div
+            class="nav__wrap__link"
+            id="work-nav"
+            onclick="scrollToSection('work')"
+          >
+            <h1 data-section="WORK">WORK</h1>
+          </div>
+          <div
+            class="nav__wrap__link"
+            id="contact-nav"
+            onclick="scrollToSection('contact')"
+          >
+            <h1 data-section="CONTACT">CONTACT</h1>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="home page" id="home">
+      <div class="home__wrap">
+        <div class="home__marquee-w home__marquee1mod">
+          <div class="home__marquee">
+            <span
+              >WEB DEVELOPER &#x2022; GRAPHIC DESIGNER &#x2022; ARTIST
+              &#x2022;&nbsp;</span
+            >
+          </div>
+          <div class="home__marquee home__marquee2">
+            <span
+              >WEB DEVELOPER &#x2022; GRAPHIC DESIGNER &#x2022; ARTIST
+              &#x2022;&nbsp;</span
+            >
+          </div>
+        </div>
+
+        <div class="home__marquee-w home__marquee2mod">
+          <div class="home__marquee home__reverse">
+            <span>MELBOURNE // NAARM &#x2022; KABIR THETHY &#x2022;&nbsp;</span>
+          </div>
+          <div class="home__marquee home__marquee2 home__reverse">
+            <span>MELBOURNE // NAARM &#x2022; KABIR THETHY &#x2022;&nbsp;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about page" id="about">
+      <div class="about__container">
+        <div class="about__banner"></div>
+
+        <div class="about__wrap">
+          <p class="about__wrap__text">
+            Hiya! I'm Kabir, a software developer hailing from Naarm. My
+            professional journey has taken a unique path, transitioning from a
+            background in genetics to the world of arts before venturing into
+            coding. I am deeply passionate about the intersection of clean,
+            accessible design and technology. Beyond coding, I find joy in
+            crafting intricate jewellery, experimenting with new recipes in the
+            kitchen, and soaking up the sun like a lizard. My tech arsenal
+            includes HTML for robust structure, CSS/SCSS for elegant styling,
+            and JavaScript to infuse interactivity into my creations.
+          </p>
+          <div class="about__wrap__wrap">
+            <img
+              class="about__wrap__wrap__img"
+              src="./src/kabir.jpeg"
+              alt="close up self portrait of Kabir. Brown skin, short hair, wearing a silver tooth necklace."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work2 page" id="work">
+      <div class="work2__wrap">
+        <img src="./src/arrow-left.png" onclick="clickLeft()" />
+        <div class="work2__outer">
+          <div class="work2__container">
+            <div class="work2__item"></div>
+            <div class="work2__item"></div>
+            <div class="work2__item"></div>
+            <div class="work2__item"></div>
+            <div class="work2__item"></div>
+            <div class="work2__item"></div>
+            <div class="work2__item"></div>
+            <div class="work2__item"></div>
+          </div>
+        </div>
+        <img src="./src/arrow-right.png" onclick="clickRight()" />
+      </div>
+    </div>
+
+    <div class="contact page" id="contact">
+      <div class="contact__board">
+        <div class="contact__board__left">
+          <div class="contact__board__left__title">
+            <h2>Send me a message</h2>
+          </div>
+          <div class="contact__board__left__field">
+            <h3>Name</h3>
+            <hr />
+          </div>
+          <div class="contact__board__left__field">
+            <h3>Email</h3>
+            <hr />
+          </div>
+          <div class="contact__board__left__message">
+            <h3>Message</h3>
+            <hr />
+          </div>
+        </div>
+        <div class="contact__board__right">
+          <h2 class="contact__board__right__title">Contact Details</h2>
+          <ul class="contact__board__right__links">
+            <li class="contact__board__right__link">LinkedIn</li>
+            <li class="contact__board__right__link">GitHub</li>
+            <li class="contact__board__right__link">Email</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

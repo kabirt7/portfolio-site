@@ -1,0 +1,123 @@
+.contact {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+.contact__board {
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 660px) {
+  .contact__board {
+    height: 85vh;
+    background-color: white;
+  }
+}
+@media only screen and (min-width: 660px) and (max-width: 1700px) {
+  .contact__board {
+    height: calc(100vh - 100px);
+  }
+}
+@media only screen and (min-width: 1700px) and (max-width: 3000px) {
+  .contact__board {
+    height: calc(100vh - 150px);
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .contact__board {
+    height: calc(100vh - 250px);
+  }
+}
+.contact__board__left {
+  width: 30%;
+  height: 60%;
+  background: linear-gradient(to right, rgb(255, 144, 255), magenta);
+}
+.contact__board__left__title {
+  height: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 4.5%;
+  padding-top: 2%;
+}
+.contact__board__left__title h2 {
+  font-weight: normal;
+}
+.contact__board__left__field {
+  height: 12%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contact__board__left__field h3 {
+  padding-left: 6%;
+  font-weight: normal;
+}
+.contact__board__left__field hr {
+  position: absolute;
+  width: calc(92% - 2px);
+  border: 1px solid black; /* Set the border color */
+  bottom: 5px;
+  left: 4%;
+}
+.contact__board__left__message {
+  height: 60%;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+.contact__board__left__message h3 {
+  padding-top: 2%;
+  padding-left: 6%;
+  font-weight: normal;
+}
+.contact__board__left__message hr {
+  position: absolute;
+  width: calc(92% - 2px);
+  border: 1px solid black; /* Set the border color */
+  bottom: 10%;
+  left: 4%;
+}
+.contact__board__right {
+  width: 30%;
+  height: 60%;
+  background-color: white;
+}
+.contact__board__right__title {
+  height: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 4.5%;
+  padding-top: 2%;
+}
+.contact__board__right__link {
+  list-style-type: none;
+}
+.contact img {
+  width: 30px;
+  height: 30px;
+}
+.contact p,
+.contact a {
+  width: 30px;
+  height: 30px;
+  font-size: large;
+  padding-top: 5px;
+  white-space: nowrap;
+  font-family: Arial, Helvetica, serif;
+  color: inherit;
+  text-decoration: none;
+}
+.contact p:hover,
+.contact a:hover {
+  text-decoration: underline;
+  text-decoration-color: magenta;
+}

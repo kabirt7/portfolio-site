@@ -4,47 +4,121 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
 
-  &__bg {
-    height: 87vh;
+  &__board {
     width: 100vw;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    @include mixin.tablet {
-      height: 90vh;
-    }
-
     @include mixin.phone {
       height: 85vh;
       background-color: white;
     }
-  }
 
-  &__board {
-    width: 100vh;
-    height: 50vh;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include mixin.tablet {
+      height: calc(100vh - 100px);
+    }
 
-    @include mixin.phone {
-      align-items: flex-start;
-      margin-top: 20vh;
-      margin-left: 5vw;
+    @include mixin.laptop {
+      height: calc(100vh - 150px);
+    }
+
+    @include mixin.computer {
+      height: calc(100vh - 250px);
+    }
+
+    &__left {
+      width: 30%;
+      height: 60%;
+      background: linear-gradient(to right, rgb(255, 144, 255), magenta);
+
+      &__title {
+        height: 12%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 4.5%;
+        padding-top: 2%;
+
+        h2 {
+          font-weight: normal;
+        }
+      }
+
+      &__field {
+        height: 12%;
+
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: flex-start;
+
+        h3 {
+          padding-left: 6%;
+          font-weight: normal;
+        }
+
+        hr {
+          position: absolute;
+          width: calc(92% - 2px);
+          border: 1px solid black; /* Set the border color */
+          bottom: 5px;
+          left: 4%;
+        }
+      }
+
+      &__message {
+        height: 60%;
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+
+        h3 {
+          padding-top: 2%;
+          padding-left: 6%;
+          font-weight: normal;
+        }
+
+        hr {
+          position: absolute;
+          width: calc(92% - 2px);
+          border: 1px solid black; /* Set the border color */
+          bottom: 10%;
+          left: 4%;
+        }
+      }
+    }
+    &__right {
+      width: 30%;
+      height: 60%;
+      background-color: white;
+
+      &__title {
+        height: 12%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 4.5%;
+        padding-top: 2%;
+      }
+
+      &__link {
+        list-style-type: none;
+      }
     }
   }
 
   &__grid {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 10px;
-    width: 70%;
-    height: auto;
-    padding-left: 6vw;
+    // display: grid;
+    // grid-template-columns: 1fr 3fr;
+    // grid-gap: 10px;
+    // width: 70%;
+    // height: auto;
+    // padding-left: 6vw;
   }
 
   & img {

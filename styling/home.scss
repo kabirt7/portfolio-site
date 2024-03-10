@@ -1,19 +1,47 @@
-.home {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-family: "Times New Roman", Times, serif;
+@use "./mixin";
 
-  &__marqueeWrap {
+.home {
+  &__wrap {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    @include mixin.computer {
+      gap: 80px;
+    }
+
+    @include mixin.laptop {
+      gap: 70px;
+    }
+
+    @include mixin.tablet {
+      gap: 0px;
+    }
+  }
+
+  &__marquee-w {
     position: relative;
     display: block;
     width: 100vw;
     height: 140px;
     overflow: hidden;
+
+    @include mixin.computer {
+      height: 180px;
+    }
   }
 
-  &__marquee1 {
+  &__marquee1mod {
+    font-weight: 600;
+  }
+
+  &__marquee2mod {
+    font-weight: 100;
+  }
+
+  &__marquee {
     position: absolute;
     display: block;
     margin: auto auto;
@@ -30,13 +58,17 @@
       min-width: 100%;
       height: 100%;
       line-height: 140px;
-      font-size: 85px;
+      font-size: 110px;
       animation: marquee 30s linear infinite;
-      font-weight: 600;
-    }
 
-    &--modified {
-      margin-top: calc(100vh / 32);
+      @include mixin.computer {
+        font-size: 230px;
+        line-height: 180px;
+      }
+
+      @include mixin.laptop {
+        font-size: 190px;
+      }
     }
   }
 
@@ -44,16 +76,11 @@
     span {
       animation-delay: 15s;
     }
-
-    &--modified {
-      font-weight: 100;
-    }
   }
 
-  &__marquee—reverse {
+  &__reverse {
     span {
       animation-direction: reverse;
-      font-weight: 100;
     }
   }
 }

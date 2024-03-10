@@ -48,28 +48,6 @@
 - home, about, tech stack (in about), project, contact sections
 - branch for each section
 
-## navbar
-- using simple js and scroll snap to smoothly transition between pages
-- large and position fixed to enhance accessibility while also looking great
-
-
-## home
-- using a marquee effect for a simple yet powerful design
-
-## about
-- responsive for 3 viewports
-- NOTE: i want to update this to 4 viewports (smaller tablet and bigger tablet) to improve the text design. Keen for feedback on how to manage this page best for responsive design. Tried my best with custom values but wondering if there's a cleaner way
-- tech stack featured here
-
-## work 
-- simple responsive flex type 'grid'
-- tried using grid but wasn't very responsive
-- NOTE: going to change this to a scrollable gallery to improve accessibility
-
-## contact
-- simple links and icons to socials, email etc
-- hover effect ties into color palette
-
 ## LOG ##
 10/03/24
 - fixed about page styling - issues with spacing

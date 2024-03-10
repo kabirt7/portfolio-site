@@ -1,6 +1,6 @@
 # HOSTING 
-[
-https://eclectic-baklava-859501.netlify.app/featured](https://stellular-cuchufli-a53c45.netlify.app/)
+
+https://stellular-cuchufli-a53c45.netlify.app/
 
 # portfolio-site
 

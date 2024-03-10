@@ -6,51 +6,50 @@
   justify-content: center;
   align-items: center;
 }
-.about__img {
-  height: 100%;
-  width: 40%;
-  display: flex;
-  justify-content: center;
-}
 .about__container {
   width: auto;
+  position: relative;
   background-color: black;
-  height: 60vh;
+  max-height: 62vh;
+  height: auto;
+  overflow: scroll;
 }
 .about__banner {
   width: 100%;
   height: 5vh;
   background-color: magenta;
+  position: sticky;
+  top: 0;
 }
 .about__wrap {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: calc(100% - 5vh);
+  align-items: center;
 }
 @media only screen and (max-width: 660px) {
   .about__wrap {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
-.about__wrap__wrap {
+.about__wrap__image {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding: 2.5%;
-}
-.about__wrap__wrap__img {
-  height: 25vw;
+  padding: 5%;
+  height: 15vw;
+  width: 15vw;
 }
 .about__wrap__text {
   color: rgb(255, 255, 255);
   max-width: 45vw;
-  padding: 1.5vw;
-  padding-right: 0;
+  padding: 5%;
+  padding-top: 0;
   hyphens: auto;
-  font-size: 1.75vw;
+  font-size: medium;
   display: flex;
   align-items: center;
 }

@@ -37,6 +37,9 @@
   width: 30%;
   height: 60%;
   background: linear-gradient(to right, rgb(255, 144, 255), magenta);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .contact__board__left__title {
   height: 12%;
@@ -51,14 +54,11 @@
 }
 .contact__board__left__field {
   height: 12%;
+  width: 100%;
   display: flex;
   position: relative;
   align-items: center;
   justify-content: flex-start;
-}
-.contact__board__left__field h3 {
-  padding-left: 6%;
-  font-weight: normal;
 }
 .contact__board__left__field hr {
   position: absolute;
@@ -67,39 +67,73 @@
   bottom: 5px;
   left: 4%;
 }
+.contact__board__left__field__inputs {
+  margin-left: 6%;
+  font-weight: normal;
+  background-color: transparent;
+  border: none;
+  width: 88%;
+}
 .contact__board__left__message {
-  height: 60%;
+  height: 61%;
+  width: 90%;
+  padding: 5%;
+  padding-top: 0;
   display: flex;
   position: relative;
   align-items: flex-start;
+  justify-content: center;
 }
-.contact__board__left__message h3 {
-  padding-top: 2%;
-  padding-left: 6%;
+.contact__board__left__message__input {
   font-weight: normal;
+  height: 90%;
+  width: 100%;
+  align-self: center;
+  background-color: transparent;
+  border: none;
+  padding: 1%;
 }
 .contact__board__left__message hr {
   position: absolute;
   width: calc(92% - 2px);
-  border: 1px solid black; /* Set the border color */
+  border: 1px solid black;
   bottom: 10%;
   left: 4%;
 }
 .contact__board__right {
-  width: 30%;
+  width: 17%;
   height: 60%;
   background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 .contact__board__right__title {
   height: 12%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 4.5%;
+  padding-left: 6.5%;
   padding-top: 2%;
+  font-weight: normal;
+}
+.contact__board__right__links {
+  flex-grow: 2;
+  padding-left: 8.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .contact__board__right__link {
   list-style-type: none;
+  font-size: large;
+  height: 20%;
+  display: flex;
+  gap: 15%;
+  align-items: center;
+}
+.contact__board__button {
+  position: absolute;
+  bottom: 10vh;
 }
 .contact img {
   width: 30px;

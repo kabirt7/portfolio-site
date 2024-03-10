@@ -8,76 +8,68 @@
   justify-content: center;
   align-items: center;
 
-  &__img {
-    height: 100%;
-    width: 40%;
-    display: flex;
-    justify-content: center;
-  }
-
   &__container {
     width: auto;
-    @include mixin.computer {
-    }
-    @include mixin.laptop {
-    }
-
-    @include mixin.tablet {
-    }
-
-    @include mixin.phone {
-    }
-
+    position: relative;
     background-color: black;
-    height: 60vh;
+    max-height: 62vh;
+    height: auto;
+    overflow: scroll;
+
+    // @include mixin.computer {
+    // }
+    // @include mixin.laptop {
+    // }
+
+    // @include mixin.tablet {
+    // }
+
+    // @include mixin.phone {
+    // }
   }
 
   &__banner {
     width: 100%;
     height: 5vh;
     background-color: magenta;
+    position: sticky;
+    top: 0;
   }
   &__wrap {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: calc(100% - 5vh);
+    align-items: center;
 
     @include mixin.phone {
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
     }
 
-    &__wrap {
+    &__image {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: row;
-      padding: 2.5%;
-      @include mixin.tablet {
-      }
+      padding: 5%;
+      height: 15vw;
+      width: 15vw;
 
-      @include mixin.phone {
-      }
-
-      &__img {
-        height: 25vw;
-
-        @include mixin.tablet {
-        }
-        @include mixin.phone {
-        }
-      }
+      // @include mixin.tablet {
+      // }
+      // @include mixin.phone {
+      // }
     }
 
     &__text {
       color: rgb(255, 255, 255);
       max-width: 45vw;
+      padding: 5%;
+      padding-top: 0;
 
-      padding: 1.5vw;
-      padding-right: 0;
       hyphens: auto;
-      font-size: 1.75vw;
+      font-size: medium;
       display: flex;
       align-items: center;
 

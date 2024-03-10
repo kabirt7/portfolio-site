@@ -143,8 +143,8 @@
     -webkit-text-stroke: 1px white;
   }
   .nav__wrap__link--active :hover {
-    color: black;
-    -webkit-text-stroke: 1px black;
+    color: grey;
+    -webkit-text-stroke: 1px grey;
   }
 }
 @media only screen and (max-width: 660px) {

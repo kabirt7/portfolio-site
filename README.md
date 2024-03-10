@@ -6,6 +6,10 @@
 - home, about, tech stack (in about), project, contact sections
 - branch for each section
 
+## TO-DO
+- fix work page styling
+- add in email functionality to contact page
+
 ## navbar
 
 - using simple js and scroll snap to smoothly transition between pages
@@ -34,7 +38,7 @@
 
 - simple links and icons to socials, email etc
 - hover effect ties into color palette
-- # NOTE: Spacing needs to be fixed on phone screens
+
 
 - using a scroll snap vertical design
 - html pages per section to make easier to navigate, using iframe to import into index
@@ -65,3 +69,8 @@
 ## contact
 - simple links and icons to socials, email etc
 - hover effect ties into color palette
+
+## LOG ##
+10/03/24
+- fixed about page styling - issues with spacing
+- fixed styling for contact page

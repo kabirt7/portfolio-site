@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "- using a scroll snap vertical design. restrained use of color since the design is powerful without it. I like a clean palette and the magenta is a bold color. - NOTE: need to add the color to my styles.scss as a variable - accesible, responsive, simple, polished design that is representative of me and my practice - inspired by a physical folder - home, about, tech stack (in about), project, contact sections - branch for each section",
+  "main": "nav.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^6.9.12"
+  }
+}

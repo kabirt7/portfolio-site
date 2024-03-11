@@ -75,6 +75,7 @@
           background-color: transparent;
           border: none;
           width: 88%;
+          outline: none;
         }
       }
 
@@ -87,8 +88,12 @@
         position: relative;
         align-items: flex-start;
         justify-content: center;
+        ::placeholder {
+          font-family: Arial, Helvetica, sans-serif;
+        }
 
         &__input {
+          font-family: Arial, Helvetica, sans-serif;
           font-weight: normal;
           height: 90%;
           width: 100%;
@@ -96,6 +101,8 @@
           background-color: transparent;
           border: none;
           padding: 1%;
+          outline: none;
+          resize: none;
         }
 
         hr {
@@ -137,8 +144,13 @@
         font-size: large;
         height: 20%;
         display: flex;
-        gap: 15%;
+        gap: 20%;
         align-items: center;
+
+        a {
+          display: flex;
+          align-items: center;
+        }
       }
     }
     &__button {

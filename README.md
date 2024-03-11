@@ -14,7 +14,7 @@ https://stellular-cuchufli-a53c45.netlify.app/
 
 ## KNOWN PROBLEMS
 
-- Work page doesnt have projects yet
+- Work page doesn't have projects yet
 - Add in email functionality to contact page, currently just static - Looking into NodeMailer
 - Styling fixes to contact page text and phone view hamburger
 
@@ -63,4 +63,4 @@ Should have the following section:
 ## LOG ##
 10/03/24
 - fixed about page styling - issues with spacing
-- fixed styling for contact page
+- updated styling for contact page

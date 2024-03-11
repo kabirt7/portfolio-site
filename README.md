@@ -1,67 +1,66 @@
-# portfolio-site
+## portfolio-site
 
-- using a scroll snap vertical design. restrained use of color. I like a clean palette and the magenta is a bold color.
-- NOTE: need to add the color to my styles.scss as a variable
-- accesible, responsive, simple, polished design that is representative of me and my practice - inspired by a physical folder
+## HOSTING 
+
+https://stellular-cuchufli-a53c45.netlify.app/
+
+## DESIGN GOALS
+
+- using a scroll snap vertical design. restrained use of color. I like a clean palette and the magenta is a bold color
+- responsive and polished design 
 - home, about, tech stack (in about), project, contact sections
 - branch for each section
+- This was one of my first projects. I’m going to keep it in basic HTML instead of React/TS like my other projects to keep as a reference
 
-## navbar
+## KNOWN PROBLEMS
+
+- Work page doesn't have projects yet
+- Add in email functionality to contact page, currently just static - Looking into NodeMailer
+- Styling fixes to contact page text and phone view hamburger
+
+## MVP
+
+* SCSS for styling.
+* B.E.M as a naming convention.
+* Responsive
+
+Should have the following section:
+
+* A landing page/section with your name and title on it.
+* An About page/section with a little bit about you
+* A Tech stacks/skills page/section with all the techs you have learned during the course
+* A Project page/section with all your projects 
+* A Contact page/section with your email, GitHub profile link, LinkedIn profile link
+
+## STRUGGLES
+
+- Marquee was complex to make responsive
+- Overall styling was difficult due to specific nature of my design
+
+## PAGE BREAKDOWN/FEATURES
+
+### navbar
 
 - using simple js and scroll snap to smoothly transition between pages
-- large and position fixed to enhance accessibility while also looking great
-- NOTE: need to separate out the functions to solve problem where navbar select wont work if scroll snapping is in progress
-- NOTE: need to fix the height on the navbar
-- NOTE: need the hamburger navbar to disappear when clicked
 
-## home
+### home
 
-- using a marquee effect for a simple yet powerful design
+- using a simple marquee effect 
 
-## about
+### about
 
-- responsive for 3 viewports
-- NOTE: i need to update this to 4 viewports (smaller tablet and bigger tablet) to improve the text design. Keen for feedback on how to manage this page best for responsive design. Tried my best with custom values but wondering if there's a cleaner way
+- Intro and a pic in a faux window
 - tech stack featured here
 
-## work
+### work
 
-- simple responsive flex type 'grid'
-- tried using grid but wasn't very responsive
-- DONE: going to change this to a scrollable gallery to improve accessibility.
+- Scrollable carousel 
 
-## contact
+### contact
 
 - simple links and icons to socials, email etc
-- hover effect ties into color palette
-- # NOTE: Spacing needs to be fixed on phone screens
 
-- using a scroll snap vertical design
-- html pages per section to make easier to navigate, using iframe to import into index
-- using a scroll snap vertical design. restrained use of color since the design is powerful without it. I like a clean palette and the magenta is a bold color.
-- NOTE: need to add the color to my styles.scss as a variable
-- accesible, responsive, simple, polished design that is representative of me and my practice - inspired by a physical folder
-- home, about, tech stack (in about), project, contact sections
-- branch for each section
-
-## navbar
-- using simple js and scroll snap to smoothly transition between pages
-- large and position fixed to enhance accessibility while also looking great
-
-
-## home
-- using a marquee effect for a simple yet powerful design
-
-## about
-- responsive for 3 viewports
-- NOTE: i want to update this to 4 viewports (smaller tablet and bigger tablet) to improve the text design. Keen for feedback on how to manage this page best for responsive design. Tried my best with custom values but wondering if there's a cleaner way
-- tech stack featured here
-
-## work 
-- simple responsive flex type 'grid'
-- tried using grid but wasn't very responsive
-- NOTE: going to change this to a scrollable gallery to improve accessibility
-
-## contact
-- simple links and icons to socials, email etc
-- hover effect ties into color palette
+## LOG ##
+10/03/24
+- fixed about page styling - issues with spacing
+- updated styling for contact page

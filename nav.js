@@ -72,3 +72,16 @@ function clickRight() {
     behavior: "smooth",
   });
 }
+
+function checkFormValidity() {
+  var message = document.getElementById("message").value;
+  var email = document.getElementById("email").value;
+  var submitBtn = document.getElementById("submit-btn");
+
+  // Check if both fields have content
+  if (message.trim() !== "" && email.trim() !== "") {
+    submitBtn.style.display = "block"; // Show the button
+  } else {
+    submitBtn.style.display = "none"; // Hide the button
+  }
+}

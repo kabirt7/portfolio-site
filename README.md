@@ -12,10 +12,11 @@ https://stellular-cuchufli-a53c45.netlify.app/
 - branch for each section
 - This was one of my first projects. I’m going to keep it in basic HTML instead of React/TS like my other projects to keep as a reference
 
-## TO-FIX
+## KNOWN PROBLEMS
 
-- fix work page styling
-- add in email functionality to contact page
+- Work page doesnt have projects yet
+- Add in email functionality to contact page, currently just static - Looking into NodeMailer
+- Styling fixes to contact page text and phone view hamburger
 
 ## MVP
 

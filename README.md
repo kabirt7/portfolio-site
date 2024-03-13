@@ -14,9 +14,10 @@ https://stellular-cuchufli-a53c45.netlify.app/
 
 ## KNOWN PROBLEMS
 
-- Work page doesn't have projects yet
-- Add in email functionality to contact page, currently just static - Looking into NodeMailer
-- Styling fixes to contact page text and phone view hamburger
+- Need to add other projects into work page
+- Styling for work page needs to be edited. A bit messy and not as clean as I want.
+- Work page needs to be longer instead of the same size and overflow: scroll.
+- Need to fix how navbar appears when this happens
 
 ## MVP
 
@@ -64,3 +65,8 @@ Should have the following section:
 10/03/24
 - fixed about page styling - issues with spacing
 - updated styling for contact page
+
+13/03/24
+- work page is now in new format. Styling needs finessing though
+- contact page now connected to formspree and has updated styling
+- about page styling is fixed

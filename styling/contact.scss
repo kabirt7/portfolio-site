@@ -15,7 +15,7 @@
     align-items: center;
 
     @include mixin.phone {
-      height: 85vh;
+      height: 100vh;
       background-color: white;
     }
 
@@ -39,6 +39,10 @@
       flex-direction: column;
       align-items: flex-start;
 
+      @include mixin.phone {
+        width: 60%;
+      }
+
       &__title {
         height: 12%;
         display: flex;
@@ -50,6 +54,10 @@
         h2 {
           font-weight: normal;
           font-size: 1.5vw;
+
+          @include mixin.phone {
+            font-size: medium;
+          }
         }
       }
 
@@ -64,7 +72,7 @@
         hr {
           position: absolute;
           width: calc(92% - 2px);
-          border: 1px solid black; /* Set the border color */
+          border: 1px solid black;
           bottom: 5px;
           left: 4%;
         }
@@ -77,6 +85,9 @@
           width: 88%;
           outline: none;
           font-size: 1vw;
+          @include mixin.phone {
+            font-size: small;
+          }
         }
       }
 
@@ -107,6 +118,9 @@
           outline: none;
           resize: none;
           font-size: 1vw;
+          @include mixin.phone {
+            font-size: small;
+          }
         }
 
         hr {
@@ -125,6 +139,7 @@
         left: 4.5%;
         background: none;
         border: none;
+        font-size: 1vw;
         &:hover {
           text-decoration: underline;
           text-decoration-color: white;
@@ -137,6 +152,10 @@
       background-color: white;
       display: flex;
       flex-direction: column;
+
+      @include mixin.phone {
+        display: none;
+      }
 
       &__title {
         height: 12%;
@@ -172,7 +191,7 @@
         a {
           display: flex;
           align-items: center;
-
+          color: black;
           text-decoration: none;
           white-space: nowrap;
           &:hover {

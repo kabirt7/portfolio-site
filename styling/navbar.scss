@@ -182,8 +182,8 @@
     align-items: center;
     justify-content: center;
     position: fixed;
-    width: 100%;
     z-index: 998;
+    width: calc(100% - 2px);
 
     &__hamburger {
       display: block;
@@ -209,7 +209,7 @@
         width: 100%;
         background-color: white;
         border: 1px solid black;
-        padding-bottom: 55px;
+
         color: black;
         -webkit-text-stroke: 1px black;
         cursor: pointer;

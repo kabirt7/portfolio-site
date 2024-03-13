@@ -14,7 +14,7 @@
 }
 @media only screen and (max-width: 660px) {
   .contact__board {
-    height: 85vh;
+    height: 100vh;
     background-color: white;
   }
 }
@@ -41,6 +41,11 @@
   flex-direction: column;
   align-items: flex-start;
 }
+@media only screen and (max-width: 660px) {
+  .contact__board__left {
+    width: 60%;
+  }
+}
 .contact__board__left__title {
   height: 12%;
   display: flex;
@@ -51,6 +56,12 @@
 }
 .contact__board__left__title h2 {
   font-weight: normal;
+  font-size: 1.5vw;
+}
+@media only screen and (max-width: 660px) {
+  .contact__board__left__title h2 {
+    font-size: medium;
+  }
 }
 .contact__board__left__field {
   height: 12%;
@@ -63,7 +74,7 @@
 .contact__board__left__field hr {
   position: absolute;
   width: calc(92% - 2px);
-  border: 1px solid black; /* Set the border color */
+  border: 1px solid black;
   bottom: 5px;
   left: 4%;
 }
@@ -73,18 +84,30 @@
   background-color: transparent;
   border: none;
   width: 88%;
+  outline: none;
+  font-size: 1vw;
+}
+@media only screen and (max-width: 660px) {
+  .contact__board__left__field__inputs {
+    font-size: small;
+  }
 }
 .contact__board__left__message {
   height: 61%;
   width: 90%;
-  padding: 5%;
+  padding: 6%;
   padding-top: 0;
   display: flex;
   position: relative;
   align-items: flex-start;
   justify-content: center;
+  flex-direction: column;
+}
+.contact__board__left__message ::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
 }
 .contact__board__left__message__input {
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   height: 90%;
   width: 100%;
@@ -92,13 +115,35 @@
   background-color: transparent;
   border: none;
   padding: 1%;
+  outline: none;
+  resize: none;
+  font-size: 1vw;
+}
+@media only screen and (max-width: 660px) {
+  .contact__board__left__message__input {
+    font-size: small;
+  }
 }
 .contact__board__left__message hr {
   position: absolute;
   width: calc(92% - 2px);
   border: 1px solid black;
-  bottom: 10%;
+  bottom: 20%;
   left: 4%;
+}
+.contact__board__left button {
+  position: absolute;
+  bottom: 5%;
+  height: 10%;
+  width: auto;
+  left: 4.5%;
+  background: none;
+  border: none;
+  font-size: 1vw;
+}
+.contact__board__left button:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 .contact__board__right {
   width: 17%;
@@ -106,6 +151,11 @@
   background-color: white;
   display: flex;
   flex-direction: column;
+}
+@media only screen and (max-width: 660px) {
+  .contact__board__right {
+    display: none;
+  }
 }
 .contact__board__right__title {
   height: 12%;
@@ -115,6 +165,7 @@
   padding-left: 6.5%;
   padding-top: 2%;
   font-weight: normal;
+  font-size: 1.5vw;
 }
 .contact__board__right__links {
   flex-grow: 2;
@@ -125,33 +176,28 @@
 }
 .contact__board__right__link {
   list-style-type: none;
-  font-size: large;
+  font-size: 1.3vw;
   height: 20%;
+  width: 100%;
   display: flex;
-  gap: 15%;
+  gap: 8%;
   align-items: center;
-}
-.contact__board__button {
-  position: absolute;
-  bottom: 10vh;
-}
-.contact img {
-  width: 30px;
-  height: 30px;
-}
-.contact p,
-.contact a {
-  width: 30px;
-  height: 30px;
-  font-size: large;
-  padding-top: 5px;
   white-space: nowrap;
   font-family: Arial, Helvetica, serif;
   color: inherit;
-  text-decoration: none;
 }
-.contact p:hover,
-.contact a:hover {
+.contact__board__right__link a {
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.contact__board__right__link a:hover {
   text-decoration: underline;
   text-decoration-color: magenta;
+}
+.contact__board__right__link img {
+  width: 2vw;
+  height: 2vw;
 }

@@ -56,13 +56,13 @@
         <div class="home__marquee-w home__marquee1mod">
           <div class="home__marquee">
             <span
-              >WEB DEVELOPER &#x2022; GRAPHIC DESIGNER &#x2022; ARTIST
+              >SOFTWARE DEVELOPER &#x2022; GRAPHIC DESIGNER &#x2022; ARTIST
               &#x2022;&nbsp;</span
             >
           </div>
           <div class="home__marquee home__marquee2">
             <span
-              >WEB DEVELOPER &#x2022; GRAPHIC DESIGNER &#x2022; ARTIST
+              >SOFTWARE DEVELOPER &#x2022; GRAPHIC DESIGNER &#x2022; ARTIST
               &#x2022;&nbsp;</span
             >
           </div>
@@ -103,100 +103,103 @@
       </div>
     </div>
 
-    <div class="work2 page" id="work">
-      <div class="work2__wrap">
-        <img src="./src/arrow-left.png" onclick="clickLeft()" />
-        <div class="work2__outer">
-          <div class="work2__container">
-            <div class="work2__item"></div>
-            <div class="work2__item"></div>
-            <div class="work2__item"></div>
-            <div class="work2__item"></div>
-            <div class="work2__item"></div>
-            <div class="work2__item"></div>
-            <div class="work2__item"></div>
-            <div class="work2__item"></div>
-          </div>
-        </div>
-        <img src="./src/arrow-right.png" onclick="clickRight()" />
-      </div>
+    <div class="work page" id="work">
+      <article class="work__article">
+        <a href="https://github.com/kabirt7/eShop/tree/main"
+          ><img src="src/project-one.jpeg" class="work__article__photo" />
+        </a>
+        <h2 class="work__article__description">eCommerce Shop</h2>
+      </article>
+      <article class="work__article">
+        <a href="https://github.com/kabirt7/to-do-app-frontend">
+          <img src="src/project-two.jpeg" class="work__article__photo"
+        /></a>
+        <p class="work__article__description">To-Do List</p>
+      </article>
+      <article class="work__article">
+        <a href="https://github.com/kabirt7/morse-code-translator"
+          ><img src="src/project-three.jpeg" class="work__article__photo"
+        /></a>
+        <p class="work__article__description">Morse Code Translator</p>
+      </article>
     </div>
 
     <div class="contact page" id="contact">
-      <form class="contact__board" id="contact-form" method="post">
-        <div class="contact__board__left">
-          <div class="contact__board__left__title">
-            <h2>Send me a message</h2>
+      <div>
+        <form
+          action="https://formspree.io/f/xdoqdwlk"
+          class="contact__board"
+          id="contact-form"
+          method="post"
+        >
+          <div class="contact__board__left">
+            <div class="contact__board__left__title">
+              <h2>Send me a message</h2>
+            </div>
+            <div class="contact__board__left__field">
+              <input
+                type="text"
+                placeholder="Name"
+                class="contact__board__left__field__inputs"
+                id="name"
+                type="name"
+                name="name"
+                required
+                oninput="checkFormValidity()"
+              />
+              <hr />
+            </div>
+            <div class="contact__board__left__field">
+              <input
+                type="text"
+                placeholder="Email"
+                class="contact__board__left__field__inputs"
+                id="email"
+                type="email"
+                name="email"
+                required
+              />
+              <hr />
+            </div>
+            <div class="contact__board__left__message">
+              <textarea
+                type="text"
+                placeholder="Message"
+                class="contact__board__left__message__input"
+                id="message"
+                name="message"
+                required
+                oninput="checkFormValidity()"
+              ></textarea>
+              <hr />
+              <button type="submit">Submit</button>
+            </div>
           </div>
-          <div class="contact__board__left__field">
-            <input
-              type="text"
-              placeholder="Name"
-              class="contact__board__left__field__inputs"
-              id="name"
-              type="name"
-              name="name"
-              required
-              oninput="checkFormValidity()"
-            />
-            <hr />
+          <div class="contact__board__right">
+            <h2 class="contact__board__right__title">Contact Details</h2>
+            <ul class="contact__board__right__links">
+              <li class="contact__board__right__link">
+                <img src="./src/linkedin.png" alt="LinkedIn logo" /><a
+                  href="https://www.linkedin.com/in/kabir-thethy-18a667236/"
+                  >LinkedIn</a
+                >
+              </li>
+              <li class="contact__board__right__link">
+                <img src="./src/github.png" alt="GitHub logo" /><a
+                  href="https://github.com/kabirt7"
+                  >GitHub</a
+                >
+              </li>
+              <li class="contact__board__right__link">
+                <img src="./src/email.png" alt="Email logo" /><a
+                  href="mailto:kabir.t7@hotmail.com"
+                  >Email</a
+                >
+              </li>
+            </ul>
           </div>
-          <div class="contact__board__left__field">
-            <input
-              type="text"
-              placeholder="Email"
-              class="contact__board__left__field__inputs"
-              id="email"
-              type="email"
-              name="email"
-              required
-              oninput="checkFormValidity()"
-            />
-            <hr />
-          </div>
-          <div class="contact__board__left__message">
-            <textarea
-              type="text"
-              placeholder="Message"
-              class="contact__board__left__message__input"
-              id="message"
-              name="message"
-              required
-              oninput="checkFormValidity()"
-            ></textarea>
-            <hr />
-          </div>
-        </div>
-        <div class="contact__board__right">
-          <h2 class="contact__board__right__title">Contact Details</h2>
-          <ul class="contact__board__right__links">
-            <li class="contact__board__right__link">
-              <img src="./src/linkedin.png" alt="LinkedIn logo" /><a
-                href="https://www.linkedin.com/in/kabir-thethy-18a667236/"
-                >LinkedIn</a
-              >
-            </li>
-            <li class="contact__board__right__link">
-              <img src="./src/github.png" alt="GitHub logo" /><a
-                href="https://github.com/kabirt7"
-                >GitHub</a
-              >
-            </li>
-            <li class="contact__board__right__link">
-              <img src="./src/email.png" alt="Email logo" /><a
-                href="kabir.t7@hotmail.com"
-                >Email</a
-              >
-            </li>
-          </ul>
-        </div>
-        <!-- <input
-          id="submit-btn"
-          type="submit"
-          value="Send Message"
-          class="contact__board__button"
-        /> -->
-      </form>
+        </form>
+      </div>
     </div>
   </body>
 </html>

@@ -19,7 +19,7 @@ https://stellular-cuchufli-a53c45.netlify.app/
 - Work page needs to be longer instead of the same size and overflow: scroll.
 - Need to fix how navbar appears when this happens
 
-- For some reason how it actually looks like on a phone and how it looks like in my browser on phone mode is very different. Need to fix
+- Safari renders the marquee effect and spacing incorrectly
 
 ## MVP
 

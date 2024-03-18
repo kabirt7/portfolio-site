@@ -14,12 +14,11 @@ https://stellular-cuchufli-a53c45.netlify.app/
 
 ## KNOWN PROBLEMS
 
-- Need to add other projects into work page
+- Safari renders the marquee effect and spacing incorrectly. Phone VP also does this on Chrome. I think I'm going to scrap the marquee event for phones.
+
 - Styling for work page needs to be edited. A bit messy and not as clean as I want.
 - Work page needs to be longer instead of the same size and overflow: scroll.
-- Need to fix how navbar appears when this happens
-
-- Safari renders the marquee effect and spacing incorrectly. Phone VP also does this on Chrome. I think I'm going to scrap the marquee event for phones.
+- Need to make navbar disappear when this happens
 
 ## MVP
 

@@ -14,13 +14,10 @@ https://stellular-cuchufli-a53c45.netlify.app/
 
 ## KNOWN PROBLEMS
 
-- Safari renders the marquee effect and spacing incorrectly. Phone VP also does this on Chrome. I think I'm going to scrap the marquee event for phones.
-
+- Safari renders the marquee effect and spacing incorrectly. Phone VP also does this on Chrome. I think I'm going to scrap the marquee effect. Need to configure on phone/tablet VP.
+- The About section height is way off for phones
 - Styling for work page needs to be edited. A bit messy and not as clean as I want.
-- Work page needs to be longer instead of the same size and overflow: scroll.
-- Need to make navbar disappear when this happens
-
-## MVP
+- Work page needs to be longer instead of the same size and overflow: scroll. This is making the navbar interract strangely
 
 * SCSS for styling.
 * B.E.M as a naming convention.
@@ -43,11 +40,11 @@ Should have the following section:
 
 ### navbar
 
-- using simple js and scroll snap to smoothly transition between pages
+- uses simple js and scroll snap to smoothly transition between pages
 
 ### home
 
-- using a simple marquee effect 
+- uses an infinite marquee effect 
 
 ### about
 
@@ -56,7 +53,7 @@ Should have the following section:
 
 ### work
 
-- Scrollable carousel 
+- flex box of articles with a landscape photo link and some text
 
 ### contact
 

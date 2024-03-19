@@ -4,13 +4,18 @@
 
 https://stellular-cuchufli-a53c45.netlify.app/
 
+## PROJECT UPDATE
+
+- the Marquee effect is difficult to make responsive
+- The overall styling and how it renders on phones is inconsistent
+- I am going to re-make this in TSX. I think the component-based approach will be more consistent and easier to troubleshoot.
+
 ## DESIGN GOALS
 
 - using a scroll snap vertical design. restrained use of color. I like a clean palette and the magenta is a bold color
 - responsive and polished design 
 - home, about, tech stack (in about), project, contact sections
 - branch for each section
-- This was one of my first projects. I’m going to keep it in basic HTML instead of React/TS like my other projects to keep as a reference
 
 ## KNOWN PROBLEMS
 

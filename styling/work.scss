@@ -17,10 +17,11 @@
   @include mixin.phone {
     padding-top: 3.5vh;
     padding-bottom: 3.5vh;
-    height: calc(93vh);
+    height: auto;
     flex-direction: column;
     justify-content: flex-start;
     gap: 3.5vh;
+    flex-wrap: nowrap;
   }
 
   @include mixin.tablet {

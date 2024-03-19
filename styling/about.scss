@@ -16,6 +16,16 @@
     height: auto;
     overflow: scroll;
 
+    @include mixin.phone {
+      width: 70vw;
+    }
+
+    p {
+      @include mixin.phone {
+        font-size: medium;
+      }
+    }
+
     // @include mixin.computer {
     // }
     // @include mixin.laptop {
@@ -73,10 +83,8 @@
       display: flex;
       align-items: center;
 
-      @include mixin.tablet {
-      }
-
       @include mixin.phone {
+        max-width: none;
       }
     }
   }

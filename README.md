@@ -18,7 +18,7 @@ https://stellular-cuchufli-a53c45.netlify.app/
 - branch for each section
 
 ## KNOWN PROBLEMS
-
+- Semantic HTML tags are way to div heavy. I have fixed his in all projects since
 - Safari renders the marquee effect and spacing incorrectly. Phone VP also does this on Chrome. I think I'm going to scrap the marquee effect. Need to configure on phone/tablet VP.
 - The About section height is way off for phones
 - Styling for work page needs to be edited. A bit messy and not as clean as I want.

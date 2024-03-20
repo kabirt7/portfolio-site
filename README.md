@@ -22,7 +22,8 @@ https://stellular-cuchufli-a53c45.netlify.app/
 - Safari renders the marquee effect and spacing incorrectly. Phone VP also does this on Chrome. I think I'm going to scrap the marquee effect. Need to configure on phone/tablet VP.
 - Styling for work page needs to be edited. A bit messy and not as clean as I want.
 - Work page needs to be longer instead of the same size and overflow: scroll. This is making the navbar interract strangely
-
+  
+## MVP
 * SCSS for styling.
 * B.E.M as a naming convention.
 * Responsive

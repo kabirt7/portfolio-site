@@ -39,7 +39,7 @@ Should have the following section:
 ## STRUGGLES
 
 - Marquee was complex to make responsive
-- Overall styling was difficult due to specific nature of my design
+- Overall styling was difficult due to specific nature of my design and the constraints of vanilla JS
 
 ## PAGE BREAKDOWN/FEATURES
 

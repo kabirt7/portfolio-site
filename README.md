@@ -6,19 +6,14 @@
 
 ## HOSTING 
 
-https://stellular-cuchufli-a53c45.netlify.app/
-
-## PROJECT UPDATE
-
-- the Marquee effect is difficult to make responsive
-- The overall styling and how it renders on phones is inconsistent
-- I am going to re-make this in TSX. I think the component-based approach will be more consistent and easier to troubleshoot.
+https://stellular-cuchufli-a53c45.netlify.app
 
 ## KNOWN PROBLEMS
 - Semantic HTML tags are way to div heavy. I have fixed his in all projects since
 - Safari renders the marquee effect and spacing incorrectly. Phone VP also does this on Chrome. I think I'm going to scrap the marquee effect. Further research has shown many other people whose CSS transform based marquees do not seem to render well on some phones. I can't find a solution at this time.
 - Styling for work page needs to be edited. A bit messy and not as clean as I want. 
 - Work page needs to be longer instead of the same size and overflow: scroll. This is making the navbar interract strangely. It is also making the navbar line up sometimes 1 pixel off on the Contact page.
+- I am going to re-make this in TSX. I think the component-based approach will be more consistent and easier to troubleshoot.
 
 ## DESIGN GOALS
 

@@ -1,5 +1,9 @@
 ## portfolio-site
 
+## DEMO
+
+![demo of project](demo.gif)
+
 ## HOSTING 
 
 https://stellular-cuchufli-a53c45.netlify.app/

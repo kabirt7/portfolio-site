@@ -2,7 +2,7 @@
 
 ## DEMO
 
-
+![demo of project](demo.gif)
 
 ## HOSTING 
 

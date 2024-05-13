@@ -3,12 +3,14 @@
   overflow: scroll;
   gap: 3.5vw;
   justify-content: space-between;
-  height: calc(100vh - 11.5vw);
+  height: auto;
   flex-wrap: wrap;
   padding-bottom: 3.5vw;
   padding-left: 3.25vw;
   padding-right: 3.25vw;
   width: 93.5vw;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 }
 @media only screen and (max-width: 660px) {
   .work {
@@ -88,4 +90,8 @@
 }
 .work__article__photo:hover {
   opacity: 0.5;
+}
+
+.work::-webkit-scrollbar {
+  display: none;
 }

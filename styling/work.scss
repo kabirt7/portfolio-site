@@ -2,17 +2,19 @@
 
 .work {
   display: flex;
-  // background-color: aqua;
   overflow: scroll;
   gap: 3.5vw;
   justify-content: space-between;
-  height: calc(100vh - 11.5vw);
+  height: auto;
   flex-wrap: wrap;
 
   padding-bottom: 3.5vw;
   padding-left: 3.25vw;
   padding-right: 3.25vw;
   width: calc(100vw - 6.5vw);
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 
   @include mixin.phone {
     padding-top: 3.5vh;
@@ -86,4 +88,8 @@
       }
     }
   }
+}
+
+.work::-webkit-scrollbar {
+  display: none;
 }
